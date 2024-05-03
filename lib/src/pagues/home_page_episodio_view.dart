@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:kaizen_anime/src/widgets/drawer_conten.dart';
 
 class EpisodeDetails extends StatelessWidget {
   final String episodeUrl;
@@ -8,9 +9,7 @@ class EpisodeDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Detalles del Episodio'),
-      ),
+      drawer: AppDrawer(),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

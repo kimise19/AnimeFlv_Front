@@ -23,7 +23,7 @@ class AppDrawer extends StatelessWidget {
               title: Text('Inicio', style: TextStyle(color: Colors.white)),
               onTap: () {
                 // Definir la acción al hacer clic en "Inicio"
-                Navigator.pop(context);
+                Navigator.pushNamed(context, '/');
               },
             ),
             ListTile(

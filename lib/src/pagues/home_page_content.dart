@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kaizen_anime/src/models/inital_page_model.dart';
 import 'package:kaizen_anime/src/pagues/home_page_episodio_view.dart';
 import 'package:kaizen_anime/src/services/inital_page_service.dart';
+import 'package:kaizen_anime/src/widgets/custom_banner_ad.dart';
 
 class HomePageContent extends StatefulWidget {
   const HomePageContent({Key? key});
@@ -205,6 +206,7 @@ class _HomePageContentState extends State<HomePageContent> {
                           },
                         ),
                       ),
+                      const CustomBannerAd()
                     ],
                   ),
                 ),
