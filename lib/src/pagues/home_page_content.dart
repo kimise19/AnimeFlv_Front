@@ -47,8 +47,7 @@ class _HomePageContentState extends State<HomePageContent> {
     return Container(
       color: Colors.black,
       child: Padding(
-        padding: const EdgeInsets.only(
-            left: 50.0), // Relleno solo en el lado izquierdo
+        padding: const EdgeInsets.only(left: 50.0),
         child: isLoading
             ? Center(child: CircularProgressIndicator())
             : SingleChildScrollView(
