@@ -39,4 +39,14 @@ class Anime {
       imageUrl: json['url_imagen'],
     );
   }
+
+  get type => null;
+
+  get state => null;
+
+  get score => null;
+
+  get descriptionText => null;
+
+  get sucesionNumeros => null;
 }

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:kaizen_anime/src/models/inital_page_model.dart';
+import 'package:kaizen_anime/src/pagues/anime_detail.dart';
 import 'package:kaizen_anime/src/pagues/home_page_episodio_view.dart';
 import 'package:kaizen_anime/src/services/inital_page_service.dart';
 import 'package:kaizen_anime/src/widgets/custom_banner_ad.dart';
@@ -76,7 +77,6 @@ class _HomePageContentState extends State<HomePageContent> {
                           itemBuilder: (BuildContext context, int index) {
                             return GestureDetector(
                               onTap: () {
-                                // Navegar a la pantalla de detalles del episodio
                                 Navigator.push(
                                   context,
                                   MaterialPageRoute(
@@ -169,37 +169,50 @@ class _HomePageContentState extends State<HomePageContent> {
                           scrollDirection: Axis.horizontal,
                           itemCount: latestAnimes.length,
                           itemBuilder: (BuildContext context, int index) {
-                            return Padding(
-                              padding: EdgeInsets.all(8),
-                              child: Column(
-                                crossAxisAlignment: CrossAxisAlignment.start,
-                                children: [
-                                  Container(
-                                    width: 150,
-                                    height: 200,
-                                    child: Image.network(
-                                      latestAnimes[index].imageUrl,
-                                      width: 150,
-                                      height: 150,
-                                      fit: BoxFit.cover,
+                            return GestureDetector(
+                              onTap: () {
+                                // Navegar a la pantalla de detalles del anime
+                                Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                    builder: (context) => AnimeDetails(
+                                      animeUrl: latestAnimes[index].url,
                                     ),
                                   ),
-                                  SizedBox(height: 5),
-                                  Expanded(
-                                    child: Container(
+                                );
+                              },
+                              child: Padding(
+                                padding: EdgeInsets.all(8),
+                                child: Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: [
+                                    Container(
                                       width: 150,
-                                      child: Text(
-                                        latestAnimes[index].title,
-                                        style: TextStyle(
-                                          color: Colors.white,
-                                          fontSize: 15,
-                                        ),
-                                        overflow: TextOverflow.ellipsis,
-                                        maxLines: 5,
+                                      height: 200,
+                                      child: Image.network(
+                                        latestAnimes[index].imageUrl,
+                                        width: 150,
+                                        height: 150,
+                                        fit: BoxFit.cover,
                                       ),
                                     ),
-                                  ),
-                                ],
+                                    SizedBox(height: 5),
+                                    Expanded(
+                                      child: Container(
+                                        width: 150,
+                                        child: Text(
+                                          latestAnimes[index].title,
+                                          style: TextStyle(
+                                            color: Colors.white,
+                                            fontSize: 15,
+                                          ),
+                                          overflow: TextOverflow.ellipsis,
+                                          maxLines: 5,
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
                               ),
                             );
                           },
