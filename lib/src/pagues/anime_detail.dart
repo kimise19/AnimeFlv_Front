@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:kaizen_anime/src/pagues/anime_page_episodio_view.dart';
+import 'package:kaizen_anime/src/widgets/drawer_conten.dart';
 
 class AnimeDetails extends StatefulWidget {
   final String animeUrl;
@@ -35,6 +36,7 @@ class _AnimeDetailsState extends State<AnimeDetails> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: AppDrawer(),
       body: FutureBuilder<Map<String, dynamic>>(
         future: _animeDetailsFuture,
         builder: (context, snapshot) {
@@ -55,23 +57,29 @@ class _AnimeDetailsState extends State<AnimeDetails> {
               child: Stack(
                 children: [
                   Positioned.fill(
-                    child: Image.network(
-                      animeDetails['background_image'],
-                      fit: BoxFit.cover,
+                    child: Container(
+                      color: Colors.black, // Opacidad del 60%
+                      // child: Image.network(
+                      //   animeDetails['background_image'],
+                      //   fit: BoxFit.cover,
+                      // ),
                     ),
                   ),
                   Padding(
-                    padding: EdgeInsets.all(24),
+                    padding: EdgeInsets.all(60),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         Row(
                           children: [
-                            Image.network(
-                              animeDetails['image_src'],
-                              width: 150,
-                              height: 200,
-                              fit: BoxFit.cover,
+                            ClipRRect(
+                              borderRadius: BorderRadius.circular(5),
+                              child: Image.network(
+                                animeDetails['image_src'],
+                                width: 250,
+                                height: 300,
+                                fit: BoxFit.cover,
+                              ),
                             ),
                             SizedBox(width: 24),
                             Expanded(
@@ -100,7 +108,7 @@ class _AnimeDetailsState extends State<AnimeDetails> {
                                         padding: EdgeInsets.all(8),
                                         color: Colors.orange,
                                         child: Text(
-                                          'Tipo: ${animeDetails['type']}',
+                                          '${animeDetails['type']}',
                                           style: TextStyle(
                                               fontSize: 16,
                                               color: Colors.white),
@@ -111,7 +119,7 @@ class _AnimeDetailsState extends State<AnimeDetails> {
                                         padding: EdgeInsets.all(8),
                                         color: Colors.blue,
                                         child: Text(
-                                          'Puntuación: ${animeDetails['score']}',
+                                          '${animeDetails['score']}',
                                           style: TextStyle(
                                               fontSize: 16,
                                               color: Colors.white),

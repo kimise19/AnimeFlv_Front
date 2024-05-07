@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:kaizen_anime/src/pagues/anime_search.dart';
 import 'package:kaizen_anime/src/pagues/home_page.dart';
 import 'package:kaizen_anime/src/untitils/ad_helper.dart';
 
@@ -24,6 +25,7 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
         '/': (context) => const MyHomePage(),
+        '/search': (context) => AnimeSearchPage(),
       },
     );
   }

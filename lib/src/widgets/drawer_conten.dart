@@ -30,8 +30,8 @@ class AppDrawer extends StatelessWidget {
               leading: Icon(Icons.search, color: Colors.white),
               title: Text('Explorar', style: TextStyle(color: Colors.white)),
               onTap: () {
-                // Definir la acción al hacer clic en "Explorar"
-                Navigator.pop(context);
+                // Definir la acción al hacer clic en "Inicio"
+                Navigator.pushNamed(context, '/search');
               },
             ),
             ListTile(
