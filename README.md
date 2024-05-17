@@ -26,7 +26,7 @@ A su vez muestra el listado con las coincidencias de la entrada de texto
 ![Logo del Proyecto](https://res.cloudinary.com/turismo-mashca/image/upload/v1715966950/pfyql1hfa6bj5gy8ko5s.jpg)
 # Resultados
 ![Logo del Proyecto](https://res.cloudinary.com/turismo-mashca/image/upload/v1715966950/mour2w129rayduaczrj1.jpg)
-## Pagina detalla de los títulos seleccionados
+## Página detalla de los títulos seleccionados
 Muestra la imagen el titulo y una sinopsis detallada, a su vez muestra la categoría a la que pertenece y su puntuación en escala de votos, debajo muestra los capítulos en orden ascendente.
 ![Logo del Proyecto](https://res.cloudinary.com/turismo-mashca/image/upload/v1715966950/rfjufqd5fa8t3pvppzjc.jpg)
 
