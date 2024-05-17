@@ -1,16 +1,31 @@
-# kaizen_anime
+# Kaizen Streaming
 
-A new Flutter project.
+Un proyecto de anime
 
-## Getting Started
+## Acerca del proyecto
 
-This project is a starting point for a Flutter application.
+Descripción general de la aplicación móvil
+Página de inicio
+Sección Últimos episodios
+Esta sección cuenta con los últimos capítulos agregados, los cuales constan de su imagen de referencia el número de capitulo y el nombre.
 
-A few resources to get you started if this is your first Flutter project:
+![Logo del Proyecto]([https://ejemplo.com/logo.png](https://e7.pngegg.com/pngimages/154/90/png-clipart-web-development-mobile-app-development-mobile-phones-learn-more-button-search-engine-optimization-mobile-app-development.png))
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Últimos animes agregados
+Esta sección muestra un listado de animes agregados recientemente, los cuales constan de su imagen de referencia el número de capitulo y el nombre.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+Barra de navegación desplegable
+Menú de opciones para la gestión de las paginas de inicio, explorar, listas, configuraciones e historial
+
+Página de búsqueda
+Muestra un recuadro de texto para lograr filtrar los títulos mediante una búsqueda refinada.
+A su vez muestra el listado con las coincidencias de la entrada de texto
+
+Pagina detalla de los títulos seleccionados
+Muestra la imagen el titulo y una sinopsis detallada, a su vez muestra la categoría a la que pertenece y su puntuación en escala de votos, debajo muestra los capítulos en orden ascendente.
+
+Página de reproducción
+Reproductor nativo propio del dispositivo, el cual muestra las siguientes opciones, adelanta por 30 segundos retroceder por 30 segundos, pausar y reproducir, cerrar reproductor.
