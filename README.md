@@ -9,7 +9,7 @@ Página de inicio
 Sección Últimos episodios
 Esta sección cuenta con los últimos capítulos agregados, los cuales constan de su imagen de referencia el número de capitulo y el nombre.
 
-![Logo del Proyecto]([https://ejemplo.com/logo.png](https://e7.pngegg.com/pngimages/154/90/png-clipart-web-development-mobile-app-development-mobile-phones-learn-more-button-search-engine-optimization-mobile-app-development.png))
+![Logo del Proyecto](https://res.cloudinary.com/turismo-mashca/image/upload/v1715966604/sik3bbahfaxv8quk9y0o.jpg)
 
 Últimos animes agregados
 Esta sección muestra un listado de animes agregados recientemente, los cuales constan de su imagen de referencia el número de capitulo y el nombre.
